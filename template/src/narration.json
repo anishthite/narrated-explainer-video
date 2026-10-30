@@ -1,0 +1,39 @@
+{
+  "voices": {
+    "narrator": {"voice": "af_heart", "speed": 1.08},
+    "robot": {"voice": "am_puck", "speed": 1.08}
+  },
+  "scenes": [
+    {
+      "id": "title",
+      "minDur": 210,
+      "lead": 24,
+      "cut": {"kind": "dip", "dur": 18},
+      "beats": [
+        {"id": "intro", "text": "This is the explainer: what the system does, and how it really works."}
+      ]
+    },
+    {
+      "id": "example",
+      "chapter": "Example",
+      "minDur": 300,
+      "cut": {"kind": "slide", "dir": "from-right", "dur": 20},
+      "beats": [
+        {"id": "plan", "text": "The plan promised seven tools instead of twenty-seven."},
+        {"id": "built", "text": "As built, a shift sees ten: seven of Claude Code's own, plus three of ours."},
+        {"id": "cost", "gap": 16, "text": "Those definitions run to about twelve thousand tokens on every first call."}
+      ]
+    },
+    {
+      "id": "outro",
+      "minDur": 200,
+      "gap": 6,
+      "tail": 90,
+      "beats": [
+        {"id": "o1", "text": "Models draft."},
+        {"id": "o2", "text": "Code picks."},
+        {"id": "o3", "text": "You review."}
+      ]
+    }
+  ]
+}
